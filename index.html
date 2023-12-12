@@ -35,22 +35,66 @@
         </div>
 
         <div class="navbar-extra">
-            <a href="#" id="search"><i data-feather="search"></i></a>
-            <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+            <a href="#" id="search-button"><i data-feather="search"></i></a>
+            <a href="#" id="shopping-cart-button"><i data-feather="shopping-cart"></i></a>
             <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
         </div>
+        <!-- Search Form Start -->
+        <div class="search-form">
+            <input type="search" id="search-box" , placeholder="Masukkan Disini...">
+            <label for="search-box"><i data-feather="search"></i></label>
+        </div>
+        <!-- Search Form End -->
+
+        <!-- Shopping Cart Start -->
+        <div class="shopping-cart">
+            <div class="cart-item">
+                <img src="img/kecil.jpeg" alt="Product 1">
+                <div class="item-detail">
+                    <h3>Baso Kecil</h3>
+                    <div class="item-price">IDR 75K</div>
+                </div>
+                <i data-feather="trash-2" class="remove-item"></i>
+            </div>
+            <div class="cart-item">
+                <img src="img/hitam.jpeg" alt="Product 2">
+                <div class="item-detail">
+                    <h3>Baso Sedang</h3>
+                    <div class="item-price">IDR 140K</div>
+                </div>
+                <i data-feather="trash-2" class="remove-item"></i>
+            </div>
+            <div class="cart-item">
+                <img src="img/jumbo.png" alt="Product 3">
+                <div class="item-detail">
+                    <h3>Baso Jumbo</h3>
+                    <div class="item-price">IDR 125K</div>
+                </div>
+                <i data-feather="trash-2" class="remove-item"></i>
+            </div>
+            <div class="cart-item">
+                <img src="img/rudal.jpeg" alt="Product 4">
+                <div class="item-detail">
+                    <h3>Baso Rudal</h3>
+                    <div class="item-price">IDR 200K</div>
+                </div>
+                <i data-feather="trash-2" class="remove-item"></i>
+            </div>
+        </div>
+        <!-- Shopping Cart End -->
     </nav>
     <!-- Navbar End -->
 
     <!-- Hero Section Start-->
     <section class="hero" id="home">
-        <main class="content">
-            <h1><span>Baso Ikan</span> Tuna pilihan.</h1>
-            <p>Baso ikan Sinar Bahari, baso ikan tuna pilihan yang lezat dan berkualitas yang disukai banyak orang.
-                Telah terdaftar
-                di BPOM dan bersertifikasi halal. Mari mengonsumsi baso ikan untuk mencerdaskan otak.</p>
-            <a href="#" class="cta">Beli Sekarang</a>
-        </main>
+        <div class="mask-container">
+            <main class="content">
+                <h1><span>Baso Ikan</span> Tuna pilihan.</h1>
+                <p>Baso ikan Sinar Bahari, baso ikan tuna pilihan yang lezat dan berkualitas yang disukai banyak orang.
+                    Telah terdaftar
+                    di BPOM dan bersertifikasi halal. Mari mengonsumsi baso ikan untuk mencerdaskan otak.</p>
+            </main>
+        </div>
     </section>
     <!-- Hero Section End -->
 
@@ -60,7 +104,7 @@
 
         <div class="row">
             <div class="about-img">
-                <img src="img/test.jpg" alt="Tentang">
+                <img src="img/bahan1.jpg" alt="Tentang">
             </div>
             <div class="content">
                 <h3>Kenapa harus membeli baso ikan sinar bahari?</h3>
@@ -90,7 +134,7 @@
                 <p class="menu-card-price">IDR 700/butir (140K/1 ball isi 200 butir)</p>
             </div>
             <div class="menu-card">
-                <img src="img/j2.png" alt="kecil" class="menu-card-img">
+                <img src="img/jumbo.png" alt="kecil" class="menu-card-img">
                 <h3 class="menu-card-title">- Jumbo -</h3>
                 <p class="menu-card-price">IDR 1250/butir (125k/1 ball isi 100 butir)</p>
             </div>
@@ -103,10 +147,101 @@
     </section>
     <!-- Product Section End -->
 
+    <!-- Menu Section Start -->
+    <section class="products" id="products">
+        <h2><span>Produk Unggulan</span> Kami</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae aliquid ipsum ducimus magnam doloremque
+            quidem!</p>
+        <div class="row">
+            <div class="product-card">
+                <div class="product-icons">
+                    <a href="#"><i data-feather="shopping-cart"></i></a>
+                    <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+                </div>
+                <div class="product-image">
+                    <img src="img/kecil.jpeg" alt="Product 1">
+                </div>
+                <div class="product-content">
+                    <h3>Baso Kecil</h3>
+                    <div class="product-stars">
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star"></i>
+                    </div>
+                    <div class="product-price">IDR 75K</div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-icons">
+                    <a href="#"><i data-feather="shopping-cart"></i></a>
+                    <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+                </div>
+                <div class="product-image">
+                    <img src="img/hitam.jpeg" alt="Product 1">
+                </div>
+                <div class="product-content">
+                    <h3>Baso Sedang</h3>
+                    <div class="product-stars">
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star"></i>
+                    </div>
+                    <div class="product-price">IDR 140K</div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-icons">
+                    <a href="#"><i data-feather="shopping-cart"></i></a>
+                    <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+                </div>
+                <div class="product-image">
+                    <img src="img/jumbo.png" alt="Product 1">
+                </div>
+                <div class="product-content">
+                    <h3>Baso Jumbo</h3>
+                    <div class="product-stars">
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                    </div>
+                    <div class="product-price">IDR 125K</div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-icons">
+                    <a href="#"><i data-feather="shopping-cart"></i></a>
+                    <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+                </div>
+                <div class="product-image">
+                    <img src="img/rudal.jpeg" alt="Product 1">
+                </div>
+                <div class="product-content">
+                    <h3>Baso Rudal</h3>
+                    <div class="product-stars">
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                    </div>
+                    <div class="product-price">IDR 200K</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Menu Section End -->
+
     <!-- Contact Section Start -->
     <section id="contact" class="contact">
         <h2><span>Hubungi</span> Kami</h2>
-        <p>Untuk informasi lebih lanjut mengenai informasi, cara bermitra atapun keagenan</p>
+        <p>Untuk informasi lebih lanjut mengenai informasi, cara bermitra atapun keagenan bisa langsung ke pabrik kami
+            dengan mengklik maps di bawah atau dapat menghubungi sosial media kami.</p>
 
         <div class="row">
             <iframe
@@ -133,13 +268,39 @@
     </section>
     <!-- Contact Section End -->
 
+    <!-- Modal Box Item Detail start -->
+    <div class="modal" id="item-detail-modal">
+        <div class="modal-container">
+            <a href="#" class="close-icon"><i data-feather="x"></i></a>
+            <div class="modal-content">
+                <img src="img/kecil.jpeg" alt="Product 1">
+                <div class="product-content">
+                    <h3>Baso Kecil</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, tenetur cupiditate facilis
+                        obcaecati
+                        ullam maiores minima quos perspiciatis similique itaque, esse rerum eius repellendus
+                        voluptatibus!</p>
+                    <div class="product-stars">
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star"></i>
+                    </div>
+                    <div class="product-price">IDR 75K</div>
+                    <a href="#"><i data-feather="shopping-cart"></i> <span>Add to Cart'</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Box Item Detail end -->
+
     <!-- Footer Start -->
     <footer>
         <div class="socials">
             <a href="#"><i data-feather="instagram"></i></a>
-            <a href="#"><i data-feather="whatsapp"></i></a>
             <a href="#"><i data-feather="facebook"></i></a>
-            <!-- <a href="#"><i data-feather="tiktok"></i></a> -->
+            <!-- <a href="#"><i data-feather="whatsapp"></i></a> -->
         </div>
         <div class="links">
             <a href="#home">Beranda</a>
